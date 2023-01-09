@@ -2,6 +2,8 @@
 	import Counter from './Counter.svelte';
 	import welcome from '$lib/images/svelte-welcome.webp';
 	import welcome_fallback from '$lib/images/svelte-welcome.png';
+	import Register from "./Register.svelte";
+	// import {onRegister, registering} from "./+page.ts";
 </script>
 
 <svelte:head>
@@ -10,6 +12,7 @@
 </svelte:head>
 
 <section>
+	<Register />
 	<h1>
 		<span class="welcome">
 			<picture>
@@ -30,6 +33,8 @@
 	</h2>
 
 	<Counter />
+
+
 </section>
 
 <style>
